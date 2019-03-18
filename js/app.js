@@ -206,7 +206,7 @@ async function loadModel(modelName) {
   model = undefined;
   
   // load the model using a HTTPS request (where you have stored your model files)
-  model = await tf.loadLayersModel("https://gogul09.github.io/models/" + modelName + "/model.json");
+  model = await tf.loadLayersModel("https://raw.githubusercontent.com/RaehanKhan/Digit-Recognizer-Live/master/output/" + modelName + "/model.json");
   
   console.log("model loaded..");
 }
